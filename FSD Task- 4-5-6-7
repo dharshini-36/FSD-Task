@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Album Showcase</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style-4-5-6-7.css">
+
+    <!-- Internal CSS -->
+    <style>
+    body {
+        background-color: #FFF8F0;
+    }
+
+    h1 {
+        text-align: center;
+        color: #6D597A;
+    }
+
+    h2 {
+        color: #B56576;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+
+    <h1>🎵 Music Album Showcase 🎵</h1>
+
+    <!-- Inline CSS -->
+    <h2 style="color:#E76F51; font-size:32px;">
+    🎶 Album of the Month: Midnights by Taylor Swift
+    </h2>
+
+    <!-- Home Section -->
+    <h2>Home</h2>
+    <p>
+        Welcome to Music Album Showcase! Explore the world's most popular
+        music albums, discover talented artists, and find your next favorite song.
+    </p>
+
+    <!-- About Us Section -->
+    <h2>About Us</h2>
+    <p>
+        Music Album Showcase is designed for music lovers who want to explore
+        albums from different genres such as Pop, Rock, Hip-Hop, K-Pop, Jazz, Indie,
+        and Classical Music. Our goal is to help users discover amazing albums
+        and learn more about their favorite artists.
+    </p>
+
+    <!-- Album Details Table -->
+    <h2>Popular Albums</h2>
+
+    <table>
+        <tr>
+            <th>Album Name</th>
+            <th>Artist</th>
+            <th>Genre</th>
+            <th>Release Year</th>
+            <th>Rating</th>
+        </tr>
+
+        <tr>
+            <td>1989</td>
+            <td>Taylor Swift</td>
+            <td>Pop</td>
+            <td>2022</td>
+            <td>4.8</td>
+        </tr>
+
+        <tr>
+            <td>÷ (Divide)</td>
+            <td>Ed Sheeran</td>
+            <td>Pop</td>
+            <td>2017</td>
+            <td>4.7</td>
+        </tr>
+
+        <tr>
+            <td>Pavazha Malli</td>
+            <td>Sai Abhyankar</td>
+            <td>Indie</td>
+            <td>2026</td>
+            <td>5.0</td>
+        </tr>
+
+        <tr>
+            <td>Arirang</td>
+            <td>BTS</td>
+            <td>K-Pop</td>
+            <td>2026</td>
+            <td>5.0</td>
+        </tr>
+
+        <tr>
+            <td>Seventh Studio Album</td>
+            <td>Lana Del Rey</td>
+            <td>pop</td>
+            <td>2021</td>
+            <td>4.9</td>
+        </tr>
+    </table>
+
+    <!-- Artist Spotlight -->
+    <h2>Artist Spotlight</h2>
+
+    <h3>Taylor Swift</h3>
+    <p>
+        Taylor Swift is one of the most influential artists in the music industry.
+        Known for her songwriting and storytelling abilities, she has released
+        several chart-topping albums and won numerous awards worldwide.
+    </p>
+
+    <!-- Top Genres -->
+    <h2>Top Music Genres</h2>
+
+    <ul>
+        <li>Pop</li>
+        <li>Rock</li>
+        <li>Hip-Hop</li>
+        <li>K-Pop</li>
+        <li>Jazz</li>
+        <li>Classical</li>
+        <li>EDM (Electronic Dance Music)</li>
+    </ul>
+
+    <!-- Contact Section -->
+    <h2>Contact Us</h2>
+    <p>
+        📧 Email: musicshowcase@gmail.com <br>
+        📞 Phone: +91 98765 43210
+    </p>
+</div>
+</body>
+</html>
