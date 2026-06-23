@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert and DOM Manipulation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cambria, cochin, georgia, times, 'times new roman', serif;
+        }
+
+        body {
+            background: teal;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: lightseagreen;
+            width: 500px;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 25px;
+            padding: 10px;
+            border: 1px dashed #87f1e0;
+            border-radius: 8px;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            color: white;
+        }
+
+        .alert-btn {
+            background: #ff6b6b;
+        }
+
+        .alert-btn:hover {
+            background: #e63946;
+            transform: scale(1.05);
+        }
+
+        .text-btn {
+            background: #28a745;
+        }
+
+        .text-btn:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>JavaScript Demo</h1>
+
+        <p id="message">
+            Welcome! Click the button below to change this text.
+        </p>
+
+        <div class="btn-container">
+            <button class="alert-btn" onclick="showAlert()">
+                Show Alert
+            </button>
+
+            <button class="text-btn" onclick="changeText()">
+                Change Text
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Hello! This is an alert message.");
+        }
+
+        function changeText() {
+            document.getElementById("message").textContent =
+                "🎉 The text has been changed successfully using JavaScript DOM!";
+        }
+    </script>
+
+</body>
+</html>
