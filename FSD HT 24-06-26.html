@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Registration Form</title>
+
+<style>
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background:#E5DAF2;
+    }
+
+    .container{
+        width:500px;
+        margin:50px auto;
+        padding:20px;
+        background:#C3B1E1;
+        border-radius:10px;
+        box-shadow:0 0 10px gray;
+    }
+
+    h2{
+        text-align:center;
+    }
+
+    input{
+        width:100%;
+        padding:10px;
+        margin:8px 0;
+        box-sizing:border-box;
+    }
+
+    button{
+        width:100%;
+        padding:10px;
+        background:#7753b1;
+        color:white;
+        border:none;
+        cursor:pointer;
+        border-radius:5px;
+    }
+
+    button:hover{
+        background:rgb(222, 222, 245);
+        color:black;
+    }
+
+    #message{
+        margin-top:15px;
+        font-weight:bold;
+        text-align:center;
+    }
+
+    .success{
+        color:green;
+    }
+
+    .error{
+        color:red;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>User Registration</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="number" id="age" placeholder="Enter Age">
+
+    <input type="text" id="phone" placeholder="Enter Phone Number">
+
+    <input type="text" id="email" placeholder="Enter Email ID">
+
+    <button id="submitBtn">Submit</button>
+
+    <p id="message"></p>
+</div>
+
+<script>
+
+document.getElementById("submitBtn").addEventListener("click", function(){
+
+    let name = document.getElementById("name").value.trim();
+    let age = document.getElementById("age").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let email = document.getElementById("email").value.trim();
+
+    let message = document.getElementById("message");
+
+    // Name Validation
+    if(name === ""){
+        message.textContent = "Name cannot be empty";
+        message.className = "error";
+        return;
+    }
+
+    if(!/^[A-Za-z ]+$/.test(name)){
+        message.textContent = "Name should contain only letters";
+        message.className = "error";
+        return;
+    }
+
+    // Age Validation
+    if(age === "" || age <= 0 || age > 100){
+        message.textContent = "Age must be between 1 and 100";
+        message.className = "error";
+        return;
+    }
+
+    // Phone Validation
+    if(!/^[0-9]{10}$/.test(phone)){
+        message.textContent = "Enter a valid 10-digit phone number";
+        message.className = "error";
+        return;
+    }
+
+    // Email Validation
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+        message.textContent = "Enter a valid email address";
+        message.className = "error";
+        return;
+    }
+
+    // Success Message
+    message.textContent = "Registration Successful!";
+    message.className = "success";
+
+});
+
+</script>
+
+</body>
+</html>
